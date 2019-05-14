@@ -1,0 +1,47 @@
+---
+
+- name: Install python
+  become: true
+  hosts: ns1
+  gather_facts: false
+  pre_tasks:
+    - name: 'install python2'
+      raw: apt-get -y install python
+    - apt: update_cache=yes cache_valid_time=3600
+
+
+- name: Install/Configure PowerDNS as a recursor
+  become: true
+  hosts: ns1
+  gather_facts: True
+  vars_files:
+    - vars/powerdns-recursor.yml
+  roles:
+    - role: powerdns.pdns_recursor
+
+- name: Install/Configure PowerDNS as a master
+  become: true
+  hosts: ns1
+  gather_facts: True
+  vars_files:
+    - vars/powerdns.yml
+  roles:
+    - role: powerdns.pdns
+  tasks:
+    - name: fixup /etc/powerdns permisions
+      file:
+        path: "/etc/powerdns"
+        state: directory
+        mode: 0755
+    - name: drop in a bind zone file
+      copy:
+        src: "files/named.conf"
+        dest: "/etc/powerdns/named.conf"
+        mode: 0644
+      notify: restart PowerDNS
+    - name: drop in some zone files
+      copy:
+        src: "files/zones/"
+        dest: "/etc/powerdns/zones/"
+        mode: 0644
+      notify: restart PowerDNS

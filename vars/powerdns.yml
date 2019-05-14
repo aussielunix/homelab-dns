@@ -1,0 +1,14 @@
+---
+
+pdns_config:
+  master: True
+  slave: False
+  local-address: '127.0.0.1'
+  local-port: 5353
+  daemon: false
+  log-dns-queries: no
+  loglevel: 3
+
+pdns_backends:
+  bind:
+    config: '/etc/powerdns/named.conf'

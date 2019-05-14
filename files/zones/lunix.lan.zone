@@ -1,0 +1,21 @@
+$TTL 180
+$ORIGIN lunix.lan.
+@ IN SOA ns1.lunix.lan. admin.lunix.lan. (
+        2019051300 ; Serial Number (date YYYYMMDD++)
+        86400 ; Refresh (24 hours)
+        1800 ; Retry (1/2 hour)
+        3600000 ; Expire (42 days)
+        21600) ; Minimum (6 hours)
+
+          IN  NS  ns1.lunix.lan.
+
+          IN  A   172.20.20.254
+
+gw-if-2   IN  A   172.20.20.1
+gw-if-1   IN  A   192.168.1.1
+cloudkey  IN  A   172.20.20.2
+es-01     IN  A   172.20.20.3
+galloway  IN  A   172.20.20.4
+wlan-01   IN  A   192.168.1.5
+ns1       IN  A   172.20.20.8
+unms      IN  A   172.20.20.9

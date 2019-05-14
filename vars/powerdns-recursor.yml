@@ -1,0 +1,7 @@
+---
+
+pdns_rec_config:
+  local-address: "0.0.0.0:53"
+  forward-zones:
+    - "lunix.lan=127.0.0.1:5353"
+    - "20.20.172.in-addr.arpa=127.0.0.1:5353"

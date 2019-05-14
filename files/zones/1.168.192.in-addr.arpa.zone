@@ -1,0 +1,14 @@
+$TTL 86400
+@ IN SOA ns1.lunix.lan. admin.lunix.lan. (
+2019051300; serial
+28800 ; refresh
+14400 ; retry
+3600000 ; expire
+86400 ; default_ttl
+)
+
+    IN  NS ns1.lunix.lan.
+
+
+1   IN  PTR gw-if-1.lunix.lan.
+5   IN  PTR wlan-01.lunix.lan.
