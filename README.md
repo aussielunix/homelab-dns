@@ -5,6 +5,8 @@ and you have ssh access.
 
 ## MVP Docs
 
+To be run from your workstation
+
 * Install ansible `pip install -r requirements.txt`
 * Install ansible roles `ansible-galaxy install -r requirements.yml`
 * add hostname/ip address to `inventories/hosts`
