@@ -1,7 +1,7 @@
 $TTL 180
 $ORIGIN lunix.lan.
 @ IN SOA ns1.lunix.lan. admin.lunix.lan. (
-        2019051300 ; Serial Number (date YYYYMMDD++)
+        2019051900 ; Serial Number (date YYYYMMDD++)
         86400 ; Refresh (24 hours)
         1800 ; Retry (1/2 hour)
         3600000 ; Expire (42 days)
@@ -16,6 +16,58 @@ gw-if-1   IN  A   192.168.1.1
 cloudkey  IN  A   172.20.20.2
 es-01     IN  A   172.20.20.3
 galloway  IN  A   172.20.20.4
-wlan-01   IN  A   192.168.1.5
 ns1       IN  A   172.20.20.8
 unms      IN  A   172.20.20.9
+
+
+wi-hl-dev-100   IN  A 172.20.20.100
+wi-hl-dev-101   IN  A 172.20.20.101
+wi-hl-dev-102   IN  A 172.20.20.102
+wi-hl-dev-103   IN  A 172.20.20.103
+wi-hl-dev-104   IN  A 172.20.20.104
+wi-hl-dev-105   IN  A 172.20.20.105
+wi-hl-dev-106   IN  A 172.20.20.106
+wi-hl-dev-107   IN  A 172.20.20.107
+wi-hl-dev-108   IN  A 172.20.20.108
+wi-hl-dev-109   IN  A 172.20.20.109
+wi-hl-dev-110   IN  A 172.20.20.110
+wi-hl-dev-111   IN  A 172.20.20.111
+wi-hl-dev-112   IN  A 172.20.20.112
+wi-hl-dev-113   IN  A 172.20.20.113
+wi-hl-dev-114   IN  A 172.20.20.114
+wi-hl-dev-115   IN  A 172.20.20.115
+wi-hl-dev-116   IN  A 172.20.20.116
+wi-hl-dev-117   IN  A 172.20.20.117
+wi-hl-dev-118   IN  A 172.20.20.118
+wi-hl-dev-119   IN  A 172.20.20.119
+wi-hl-dev-120   IN  A 172.20.20.120
+wi-hl-dev-121   IN  A 172.20.20.121
+wi-hl-dev-122   IN  A 172.20.20.122
+wi-hl-dev-123   IN  A 172.20.20.123
+wi-hl-dev-124   IN  A 172.20.20.124
+wi-hl-dev-125   IN  A 172.20.20.125
+wi-hl-dev-126   IN  A 172.20.20.126
+wi-hl-dev-127   IN  A 172.20.20.127
+wi-hl-dev-128   IN  A 172.20.20.128
+wi-hl-dev-129   IN  A 172.20.20.129
+wi-hl-dev-130   IN  A 172.20.20.130
+wi-hl-dev-131   IN  A 172.20.20.131
+wi-hl-dev-132   IN  A 172.20.20.132
+wi-hl-dev-133   IN  A 172.20.20.133
+wi-hl-dev-134   IN  A 172.20.20.134
+wi-hl-dev-135   IN  A 172.20.20.135
+wi-hl-dev-136   IN  A 172.20.20.136
+wi-hl-dev-137   IN  A 172.20.20.137
+wi-hl-dev-138   IN  A 172.20.20.138
+wi-hl-dev-139   IN  A 172.20.20.139
+wi-hl-dev-140   IN  A 172.20.20.140
+wi-hl-dev-141   IN  A 172.20.20.141
+wi-hl-dev-142   IN  A 172.20.20.142
+wi-hl-dev-143   IN  A 172.20.20.143
+wi-hl-dev-144   IN  A 172.20.20.144
+wi-hl-dev-145   IN  A 172.20.20.145
+wi-hl-dev-146   IN  A 172.20.20.146
+wi-hl-dev-147   IN  A 172.20.20.147
+wi-hl-dev-148   IN  A 172.20.20.148
+wi-hl-dev-149   IN  A 172.20.20.149
+wi-hl-dev-150   IN  A 172.20.20.150

@@ -1,14 +1,66 @@
 $TTL 86400
 @ IN SOA ns1.lunix.lan. admin.lunix.lan. (
-2019051300; serial
+2019051900; serial
 28800 ; refresh
 14400 ; retry
 3600000 ; expire
 86400 ; default_ttl
 )
 
-    IN  NS ns1.lunix.lan.
+      IN  NS ns1.lunix.lan.
 
 
-1   IN  PTR gw-if-1.lunix.lan.
-5   IN  PTR wlan-01.lunix.lan.
+1     IN  PTR gw-if-1.lunix.lan.
+5     IN  PTR wlan-01.lunix.lan.
+
+100   IN  PTR wi-priv-dev-100.lunix.lan.
+101   IN  PTR wi-priv-dev-101.lunix.lan.
+102   IN  PTR wi-priv-dev-102.lunix.lan.
+103   IN  PTR wi-priv-dev-103.lunix.lan.
+104   IN  PTR wi-priv-dev-104.lunix.lan.
+105   IN  PTR wi-priv-dev-105.lunix.lan.
+106   IN  PTR wi-priv-dev-106.lunix.lan.
+107   IN  PTR wi-priv-dev-107.lunix.lan.
+108   IN  PTR wi-priv-dev-108.lunix.lan.
+109   IN  PTR wi-priv-dev-109.lunix.lan.
+110   IN  PTR wi-priv-dev-110.lunix.lan.
+111   IN  PTR wi-priv-dev-111.lunix.lan.
+112   IN  PTR wi-priv-dev-112.lunix.lan.
+113   IN  PTR wi-priv-dev-113.lunix.lan.
+114   IN  PTR wi-priv-dev-114.lunix.lan.
+115   IN  PTR wi-priv-dev-115.lunix.lan.
+116   IN  PTR wi-priv-dev-116.lunix.lan.
+117   IN  PTR wi-priv-dev-117.lunix.lan.
+118   IN  PTR wi-priv-dev-118.lunix.lan.
+119   IN  PTR wi-priv-dev-119.lunix.lan.
+120   IN  PTR wi-priv-dev-120.lunix.lan.
+121   IN  PTR wi-priv-dev-121.lunix.lan.
+122   IN  PTR wi-priv-dev-122.lunix.lan.
+123   IN  PTR wi-priv-dev-123.lunix.lan.
+124   IN  PTR wi-priv-dev-124.lunix.lan.
+125   IN  PTR wi-priv-dev-125.lunix.lan.
+126   IN  PTR wi-priv-dev-126.lunix.lan.
+127   IN  PTR wi-priv-dev-127.lunix.lan.
+128   IN  PTR wi-priv-dev-128.lunix.lan.
+129   IN  PTR wi-priv-dev-129.lunix.lan.
+130   IN  PTR wi-priv-dev-130.lunix.lan.
+131   IN  PTR wi-priv-dev-131.lunix.lan.
+132   IN  PTR wi-priv-dev-132.lunix.lan.
+133   IN  PTR wi-priv-dev-133.lunix.lan.
+134   IN  PTR wi-priv-dev-134.lunix.lan.
+135   IN  PTR wi-priv-dev-135.lunix.lan.
+136   IN  PTR wi-priv-dev-136.lunix.lan.
+137   IN  PTR wi-priv-dev-137.lunix.lan.
+138   IN  PTR wi-priv-dev-138.lunix.lan.
+139   IN  PTR wi-priv-dev-139.lunix.lan.
+140   IN  PTR wi-priv-dev-140.lunix.lan.
+141   IN  PTR wi-priv-dev-141.lunix.lan.
+142   IN  PTR wi-priv-dev-142.lunix.lan.
+143   IN  PTR wi-priv-dev-143.lunix.lan.
+144   IN  PTR wi-priv-dev-144.lunix.lan.
+145   IN  PTR wi-priv-dev-145.lunix.lan.
+146   IN  PTR wi-priv-dev-146.lunix.lan.
+147   IN  PTR wi-priv-dev-147.lunix.lan.
+148   IN  PTR wi-priv-dev-148.lunix.lan.
+149   IN  PTR wi-priv-dev-149.lunix.lan.
+150   IN  PTR wi-priv-dev-150.lunix.lan.
