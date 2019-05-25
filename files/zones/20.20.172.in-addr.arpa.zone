@@ -1,6 +1,6 @@
 $TTL 86400
 @ IN SOA ns1.lunix.lan. admin.lunix.lan. (
-2019052500; serial
+2019052501; serial
 28800 ; refresh
 14400 ; retry
 3600000 ; expire
@@ -10,7 +10,7 @@ $TTL 86400
     IN  NS ns1.lunix.lan.
 
 
-1   IN  PTR gw-if-1.lunix.lan.
+254 IN  PTR gw-if-1.lunix.lan.
 3   IN  PTR es-01.lunix.lan.
 4   IN  PTR galloway.lunix.lan.
 5   IN  PTR wlan-01.lunix.lan.
