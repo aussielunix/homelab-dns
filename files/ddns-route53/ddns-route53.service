@@ -1,0 +1,16 @@
+[Unit]
+Description=Route53 dynamic dns
+AssertPathExists=/opt/ddns-route53/bin/ddns-route53
+
+[Service]
+WorkingDirectory=/opt/ddns-route53/
+ExecStart=/opt/ddns-route53/bin/ddns-route53 --config=/opt/ddns-route53/etc/config.yml --schedule="@hourly"
+
+ExecReload=/bin/kill -HUP $MAINPID
+LimitNOFILE=65536
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,45 @@
+---
+# makes use of https://github.com/crazy-max/ddns-route53
+#
+- name: Install/configure ddns-route53
+  become: true
+  hosts: ns1
+  gather_facts: True
+  vars_files:
+    - vars/ddns-route53.yml
+  tasks:
+    - name: create ddns directories
+      file:
+        path: "{{item}}"
+        state: directory
+        mode: 0755
+      with_items:
+        - "/opt/ddns-route53"
+        - "/opt/ddns-route53/etc"
+        - "/opt/ddns-route53/bin"
+    - name: drop in a config file
+      template:
+        src: "ddns-route53/config.yml.j2"
+        dest: "/opt/ddns-route53/etc/config.yml"
+        mode: 0400
+      notify: restart ddns-route53
+    - name: drop in the ddns-route53 binary
+      copy:
+        src: "files/ddns-route53/ddns-route53.bin"
+        dest: "/opt/ddns-route53/bin/ddns-route53"
+        mode: 0755
+      notify: restart ddns-route53
+    - name: drop in a systemd unit file
+      copy:
+        src: "files/ddns-route53/ddns-route53.service"
+        dest: "/etc/systemd/system/ddns-route53.service"
+        mode: 0644
+      notify: restart ddns-route53
+  handlers:
+    - name: restart ddns-route53
+      systemd:
+        name: ddns-route53
+        state: restarted
+        enabled: true
+        masked: false
+        daemon_reload: yes

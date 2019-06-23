@@ -1,0 +1,5 @@
+---
+
+ddns_route53_access_key_id: "xxxxxxxxxxxxxxxxxxxx"
+ddns_route53_secret_access_key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+ddns_route53_zone_id: "xxxxxxxxxxxxxx"
